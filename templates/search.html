@@ -51,5 +51,23 @@
             </div>
         </div>
     </div>
+    <script>
+        document.querySelector('#movies_searchbar').addEventListener('input', filterList)
+
+        function filterList() {
+            const searchInput = document.querySelector('#movies_searchbar')
+            const filter = searchInput.value.toLowerCase()
+            const listItems = document.querySelectorAll('.col')
+
+            listItems.forEach((item) =>{
+                let text = item.textContent
+                if(text.toLowerCase().includes(filter.toLowerCase())) {
+                    item.style.display = ''
+                }else {
+                    item.style.display = 'none'
+                }
+            });
+        }
+    </script>
 </body>
 </html>
