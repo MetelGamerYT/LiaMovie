@@ -1,0 +1,33 @@
+body {
+    background-color: #161616;
+    background-image: radial-gradient(rgb(40, 40, 40) 10%, transparent 10%);
+    background-position: 1px 1px;
+    background-size: 16px 16px;
+    color: white;
+}
+.form{
+    position: relative;
+}
+.form .fa-search{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+}
+.form-input{
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+.form-input:focus{
+    box-shadow: none;
+    border:none;
+}
+.movie-poster{
+    border-radius: 10px 10px 0px 0px;
+    max-height: 400px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
